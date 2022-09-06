@@ -21,6 +21,24 @@
 				color: #d1633c;
 				font-size: 1em;
 			}
+			#mybtn {
+		 display: none;
+		 position: fixed;
+		 bottom: 20px;
+		 right: 30px;
+		 z-index: 99;
+		 font-size: 18px;
+		 border: none;
+		 outline: none;
+		 background-color: red;
+		 color: white;
+		 cursor: pointer;
+		 padding: 15px;
+		 border-radius: 4px;
+	}
+#mybtn{
+		background-color: #555;
+	}
 			
 		</style>
 	</head>
@@ -28,7 +46,30 @@
 		<h1> <img src="https://learningwebdesign.com/5e/materials/ch04/bistro/blackgoose.png" alt="logo"><br> Black Goose Bistro</img>
 
  
-
+		<script>
+		var mybutton=document.getElementById("mybtn");
+		window.onscroll=function(){scrollFunction()};
+		
+		
+		
+		function scrollFunction()
+		{
+			if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20)
+			{
+				mybutton.style.display="block";
+			}
+			else
+			{
+				mybutton.style.display="none"
+			}
+		}
+		function TopFunction()
+		{
+			document.body.scrollTop=0;
+			document.documentElement.scrollTop=0;
+		}
+	
+</script>
 		<h2>The Restaurant</h2>
 
 		<p>The Black Goose Bistro offers casual lunch and dinner fare in a relaxed atmosphere. The menu changes regularly to highlight the freshest local ingredients.</p>
