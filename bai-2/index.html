@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <style>
+
+        h1 { color: red; }
+
+        var {
+  font: bold 15px "Courier", "Courier New", monospace;
+}
+#mybtn {
+		 display: none;
+		 position: fixed;
+		 bottom: 20px;
+		 right: 30px;
+		 z-index: 99;
+		 font-size: 18px;
+		 border: none;
+		 outline: none;
+		 background-color: red;
+		 color: white;
+		 cursor: pointer;
+		 padding: 15px;
+		 border-radius: 4px;
+		 background-color: #555;
+	}
+    #main{
+        margin: auto;
+        background-color: #555;
+        color: red;
+        border-radius: 2px;
+        padding-left: 30px;
+    }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Trang web đầu tiên của bác Tèo</h1>
+    <button onclick="TopFunction()" id="mybtn"title="Go to top">^</button>
+        <script>
+        		var mybutton=document.getElementById("mybtn");
+        		window.onscroll=function(){scrollFunction()};
+        
+        
+        
+        		function scrollFunction()
+        		{
+        			if(document.body.scrollTop > 20 || document.documentElement.scrollTop>20)
+        			{
+        				mybutton.style.display="block";
+        			}
+        			else
+        			{
+        				mybutton.style.display="none"
+        			}
+        		}
+        		function TopFunction()
+        		{
+        			document.body.scrollTop=0;
+        			document.documentElement.scrollTop=0;
+        		}
+        	</script>
+<div>
+    <p>Học về web browser</p>
+    <bdi>
+        hello, it my world<br>
+    </bdi>
+    <p><bdo dir="ltr">hàng này được viết từ trái sang phải </bdo></p>
+    <p><bdo dir="rtl">hàng này được viết từ phải sang trái</bdo></p>
+    <pre><cite>Scream</cite> là bức tranh Edward Munch vẽ vào năm 1893</pre>
+</div>
+<pre>Khai báo biến namSinh <code>int namSinh;</code> ở phần đầu chương trình</pre>
+<p>Cho tôi một ly <del>ca cao</del> <ins>trà</ins></p>
+<p><dfn>HTML</dfn> là ngôn ngữ đánh dấu siêu văn bản</p>
+<p>Tuấn <em>cho mượn 50k</em> đi</p>
+<p><i>HMTL</i>là ngôn ngữ đánh dấu siêu văn bản</p>
+<p>Nhập địa chỉ IP: <kbd>có cái đầu buồi</kbd></p>
+<p><mark>Cụm từ này</mark> đã được nhắc đến ở phía trên<p></p>
+<p>Theo Wiki: <q>HTML là ngôn ngữ đánh dấu siêu văn bản</q></p>
+<p><s>có cái đầu buồi</s></p>
+<p>không có cái đầu buồi</p>
+<p>my world của <samp>hacker lỏd</samp></p>
+<p>Chỉ có chữ <span style="color:red">này</span> có màu đỏ thôi</p>
+<p>it me là <strong>hacker lỏd</strong></p>
+<p>số 2 được viết thấp hơn bình thường ví dụ: H<sub>2</sub>O</p>
+<p>số 2 được viết cao hơn bình thường ví dụ: ax<sup>2</sup>+bx+c=0</p>
+<p>giờ đi ngủ là <time datetime="23:00">11:00 p.m</time></p>
+<p>chử <u>lỏd</u> bị sai chính tả</p>
+<p><code>document.write("<var>user-name</var>")</code></p>
+<p>Đây là một từ rất dàidàidàidàidàidàidàidàidàidài dàidàidàidàidàidàidàidàidàidàidàidàidàidàidàidàidàidàidàidài<wbr>nósẽbịngắttại<wbr>cácvịtrícụthểkhicửasổtrìnhduyệtthayđổikíchthước.</p>
+<span>
+    hello, it my world<br>
+    có cái <s>lồn</s>
+    <ul id="phan-1">
+
+        <li>Tèo: <span class="tel">6677.0028</span></li>
+        
+        <li>Tí: <span class="tel">5508.0808</span></li>
+        
+        <li>Mít: <span class="tel">6677.5508</span></li>
+        
+        <li>Khoai: <span class="tel">0909.3509</span></li>
+        
+        </ul>
+</span>
+<div id="main">
+
+ <p>đây là nồi dung của main</p>
+ nó không có gì hết
+    
+    </div>
+    
+     
+    
+    <div id="news">
+         <p>hello, đây là nội dung dòng news</p>
+    cũng không có gì
+    
+    </div>
+    
+     
+    
+    <div id="links">
+    
+   <p>phần này thì chứa links</p>
+   <a href="#"></a>
+    
+    </div>
+    <section id="main">
+
+       <p>main này chẳng có gì cả</p>
+        
+        </section>
+        
+         
+        
+        <section id="news">
+        <p>news này chả có gì luôn</p>
+        </section>
+        
+         
+        
+        <aside id="links">
+        
+        <p>links này cũng tương tự</p>
+        
+        </aside>
+        <form>
+            <label>Nom :
+              <input name="submitted-name" autocomplete="name">
+            </label>
+            <button>Sauvegarder</button>
+          </form>
+          
+          <form method="post">
+            <label>Nom :
+              <input name="submitted-name" autocomplete="name">
+            </label>
+            <button>Sauvegarder</button>
+          </form>
+          
+          <form method="post">
+            <fieldset>
+              <legend>Titre</legend>
+              <label><input type="radio" name="radio">Sélectionnez-moi</label>
+            </fieldset>
+          </form>
+</body>
+
+</html>
